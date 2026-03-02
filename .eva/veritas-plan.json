@@ -1,0 +1,429 @@
+{
+  "schema": "eva.veritas-plan.v1",
+  "generated_at": "2026-02-25T11:55:51.312Z",
+  "generated_from": [
+    "PLAN.md"
+  ],
+  "format_detected": "veritas",
+  "prefix": "F12",
+  "features": [
+    {
+      "id": "F12-01",
+      "title": "Problem Statement",
+      "source_heading": "## Feature: Problem Statement [ID=F12-01]",
+      "stories": [
+        {
+          "id": "F12-01-001",
+          "title": "Current Issues",
+          "feature_id": "F12-01",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F12-01-002",
+          "title": "Current Structure",
+          "feature_id": "F12-01",
+          "source": "heading",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "F12-02",
+      "title": "Proposed Solution",
+      "source_heading": "## Feature: Proposed Solution [ID=F12-02]",
+      "stories": [
+        {
+          "id": "F12-02-001",
+          "title": "Organizational Principles",
+          "feature_id": "F12-02",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F12-02-002",
+          "title": "Target Structure",
+          "feature_id": "F12-02",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F12-02-003",
+          "title": "Path Length Comparison",
+          "feature_id": "F12-02",
+          "source": "heading",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "F12-03",
+      "title": "Implementation Plan",
+      "source_heading": "## Feature: Implementation Plan [ID=F12-03]",
+      "stories": [
+        {
+          "id": "F12-03-001",
+          "title": "Phase 1: Backup (5 minutes)",
+          "feature_id": "F12-03",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F12-03-002",
+          "title": "Phase 2: Create New Structure (2 minutes)",
+          "feature_id": "F12-03",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F12-03-003",
+          "title": "Phase 3: Move Active Projects (5 minutes)",
+          "feature_id": "F12-03",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F12-03-004",
+          "title": "Phase 4: Organize All Projects (10 minutes)",
+          "feature_id": "F12-03",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F12-03-005",
+          "title": "Phase 5: Move Reference Repos (5 minutes)",
+          "feature_id": "F12-03",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F12-03-006",
+          "title": "Phase 6: Create Convenience Shortcuts (1 minute)",
+          "feature_id": "F12-03",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F12-03-007",
+          "title": "Phase 7: Create VS Code Workspaces (5 minutes)",
+          "feature_id": "F12-03",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F12-03-008",
+          "title": "Phase 8: Update Documentation (10 minutes)",
+          "feature_id": "F12-03",
+          "source": "heading",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "F12-04",
+      "title": "Workspace Configurations",
+      "source_heading": "## Feature: Workspace Configurations [ID=F12-04]",
+      "stories": [
+        {
+          "id": "F12-04-001",
+          "title": "1. `active-work.code-workspace` (Daily Driver)",
+          "feature_id": "F12-04",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F12-04-002",
+          "title": "2. `ms-infojp.code-workspace` (MS-InfoJP Focused)",
+          "feature_id": "F12-04",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F12-04-003",
+          "title": "3. `jp-automation.code-workspace` (JP Automation Focused)",
+          "feature_id": "F12-04",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F12-04-004",
+          "title": "4. `all-references.code-workspace` (Code Comparison)",
+          "feature_id": "F12-04",
+          "source": "heading",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "F12-05",
+      "title": "Benefits",
+      "source_heading": "## Feature: Benefits [ID=F12-05]",
+      "stories": [
+        {
+          "id": "F12-05-001",
+          "title": "1. **Shorter Paths**",
+          "feature_id": "F12-05",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F12-05-002",
+          "title": "2. **Clear Organization**",
+          "feature_id": "F12-05",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F12-05-003",
+          "title": "3. **Focused Workspaces**",
+          "feature_id": "F12-05",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F12-05-004",
+          "title": "4. **Easy Scaling**",
+          "feature_id": "F12-05",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F12-05-005",
+          "title": "5. **Better Git Workflows**",
+          "feature_id": "F12-05",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F12-05-006",
+          "title": "6. **Discoverability**",
+          "feature_id": "F12-05",
+          "source": "heading",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "F12-06",
+      "title": "Rollback Plan",
+      "source_heading": "## Feature: Rollback Plan [ID=F12-06]",
+      "stories": [
+        {
+          "id": "F12-06-001",
+          "title": "Option A: Automated Rollback",
+          "feature_id": "F12-06",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F12-06-002",
+          "title": "Option B: Manual Rollback",
+          "feature_id": "F12-06",
+          "source": "heading",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "F12-07",
+      "title": "Post-Migration Tasks",
+      "source_heading": "## Feature: Post-Migration Tasks [ID=F12-07]",
+      "stories": [
+        {
+          "id": "F12-07-001",
+          "title": "1. Update Hardcoded Paths in Scripts",
+          "feature_id": "F12-07",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F12-07-002",
+          "title": "2. Update Project Documentation",
+          "feature_id": "F12-07",
+          "source": "heading",
+          "tasks": [
+            {
+              "id": "F12-07-002-T01",
+              "title": "Update MS-InfoJP README with new path (`I:\\_active\\ms-infojp`)",
+              "story_id": "F12-07-002",
+              "feature_id": "F12-07",
+              "done": false,
+              "source": "checklist"
+            },
+            {
+              "id": "F12-07-002-T02",
+              "title": "Update JP automation README with new path",
+              "story_id": "F12-07-002",
+              "feature_id": "F12-07",
+              "done": false,
+              "source": "checklist"
+            },
+            {
+              "id": "F12-07-002-T03",
+              "title": "Update EVA Suite documentation",
+              "story_id": "F12-07-002",
+              "feature_id": "F12-07",
+              "done": false,
+              "source": "checklist"
+            },
+            {
+              "id": "F12-07-002-T04",
+              "title": "Update any reference links in other projects",
+              "story_id": "F12-07-002",
+              "feature_id": "F12-07",
+              "done": false,
+              "source": "checklist"
+            }
+          ]
+        },
+        {
+          "id": "F12-07-003",
+          "title": "3. Update VS Code Settings",
+          "feature_id": "F12-07",
+          "source": "heading",
+          "tasks": [
+            {
+              "id": "F12-07-003-T01",
+              "title": "Set default workspace: `I:\\.vscode\\active-work.code-workspace`",
+              "story_id": "F12-07-003",
+              "feature_id": "F12-07",
+              "done": false,
+              "source": "checklist"
+            },
+            {
+              "id": "F12-07-003-T02",
+              "title": "Update recent workspaces list",
+              "story_id": "F12-07-003",
+              "feature_id": "F12-07",
+              "done": false,
+              "source": "checklist"
+            },
+            {
+              "id": "F12-07-003-T03",
+              "title": "Test each workspace configuration",
+              "story_id": "F12-07-003",
+              "feature_id": "F12-07",
+              "done": false,
+              "source": "checklist"
+            }
+          ]
+        },
+        {
+          "id": "F12-07-004",
+          "title": "4. Update Git Ignore Patterns",
+          "feature_id": "F12-07",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F12-07-005",
+          "title": "5. Verify All Symlinks Work",
+          "feature_id": "F12-07",
+          "source": "heading",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "F12-08",
+      "title": "Success Criteria",
+      "source_heading": "## Feature: Success Criteria [ID=F12-08]",
+      "stories": [
+        {
+          "id": "F12-08-001",
+          "title": "All active projects accessible at `I:\\_active\\[project-name]`",
+          "feature_id": "F12-08",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F12-08-002",
+          "title": "All projects organized in flat `I:\\_projects\\` structure",
+          "feature_id": "F12-08",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F12-08-003",
+          "title": "Reference repos in `I:\\_reference\\`",
+          "feature_id": "F12-08",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F12-08-004",
+          "title": "VS Code workspaces created and tested",
+          "feature_id": "F12-08",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F12-08-005",
+          "title": "MS-InfoJP deployment runs without path errors",
+          "feature_id": "F12-08",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F12-08-006",
+          "title": "JP automation scripts work with new paths",
+          "feature_id": "F12-08",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F12-08-007",
+          "title": "Bash scripts (if any) work without modification",
+          "feature_id": "F12-08",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F12-08-008",
+          "title": "All symlinks functional",
+          "feature_id": "F12-08",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F12-08-009",
+          "title": "Documentation updated",
+          "feature_id": "F12-08",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F12-08-010",
+          "title": "No broken links in VS Code",
+          "feature_id": "F12-08",
+          "source": "heading",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "F12-09",
+      "title": "Timeline",
+      "source_heading": "## Feature: Timeline [ID=F12-09]",
+      "stories": []
+    },
+    {
+      "id": "F12-10",
+      "title": "Next Steps",
+      "source_heading": "## Feature: Next Steps [ID=F12-10]",
+      "stories": []
+    },
+    {
+      "id": "F12-11",
+      "title": "Files in This Project",
+      "source_heading": "## Feature: Files in This Project [ID=F12-11]",
+      "stories": []
+    },
+    {
+      "id": "F12-12",
+      "title": "References",
+      "source_heading": "## Feature: References [ID=F12-12]",
+      "stories": []
+    }
+  ]
+}
