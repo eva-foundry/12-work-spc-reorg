@@ -2,8 +2,8 @@
   "meta": {
     "schema": "eva.reconciliation.v2",
     "generated_at": "2026-02-25T11:55:51.872Z",
-    "repo": "C:\\AICOE\\eva-foundation\\12-work-spc-reorg",
-    "discovery_path": "C:\\AICOE\\eva-foundation\\12-work-spc-reorg\\.eva\\discovery.json"
+    "repo": "C:\\eva-foundry\\eva-foundation\\12-work-spc-reorg",
+    "discovery_path": "C:\\eva-foundry\\eva-foundation\\12-work-spc-reorg\\.eva\\discovery.json"
   },
   "coverage": {
     "stories_total": 40,

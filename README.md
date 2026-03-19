@@ -1,8 +1,32 @@
 # Project 12: VS Code Workspace Reorganization
 
+# 12-work-spc-reorg
+
+<!-- Placeholders: 12-work-spc-reorg = project folder name (e.g., "37-data-model", "48-eva-veritas") -->
+
+**Template Version**: v5.0.0 (Session 44 - Governance Template Consolidation)  
+**Part of EVA Foundry Workspace** | [Data Model](https://msub-eva-data-model.victoriousgrass-30debbd3.canadacentral.azurecontainerapps.io/model/projects/12-work-spc-reorg) | [Veritas Audit](#veritas-audit)  
+**Workspace Skills**: @sprint-advance | @progress-report | @gap-report | @sprint-report | @veritas-expert
+
+---
+
+## EVA Quick Links
+
+| Resource | Link |
+|----------|------|
+| **Project Record** | `GET https://msub-eva-data-model.victoriousgrass-30debbd3.canadacentral.azurecontainerapps.io/model/projects/12-work-spc-reorg` |
+| **Live Session Data** | `GET .../model/project_work/?project_id=12-work-spc-reorg&$orderby=id%20desc&$limit=10` |
+| **Veritas Audit** | Run `audit_repo` MCP tool on `C:\eva-foundry\12-work-spc-reorg` |
+| **Trust Score** | Run `get_trust_score` MCP tool on `C:\eva-foundry\12-work-spc-reorg` |
+| **Sync to Model** | Run `sync_repo` MCP tool (full paperless DPDCA audit + write-back) |
+| **Governance** | [PLAN.md](./PLAN.md) \| [STATUS.md](./STATUS.md) \| [ACCEPTANCE.md](./ACCEPTANCE.md) |
+| **Instructions** | [.github/copilot-instructions.md](./.github/copilot-instructions.md) |
+
+---
+
 **Goal**: Restructure workspace for optimal VS Code experience, short paths, and clear project separation
 
-**Status**: 📋 Planning  
+**Status**: Planning  
 **Created**: January 25, 2026  
 **Owner**: Marco Presta  
 
@@ -36,25 +60,25 @@
 
 ```
 I:\
-├── EVA Suite/                      # 🎒 Bag #1: Planning, orchestration, housekeeping
-│   ├── eva-orchestrator/
-│   ├── info-assistant-reference/
-│   ├── reports/
-│   └── scripts/
-│
-├── EVA-JP-v1.2/                    # 🎒 Bag #2: Mixed app + project hub
-│   ├── app/                        # EVA-JP application
-│   ├── infra/                      # EVA-JP infrastructure  
-│   └── docs/                       # 🚨 ACTUALLY A PROJECT HUB
-│       ├── eva-ai-governance/      # Separate project
-│       ├── eva-foundation/         # Project container
-│       │   └── projects/           # 11 sub-projects (including MS-InfoJP)
-│       ├── habit-tracker/          # Unrelated project
-│       └── jp/                     # JP-specific stuff
-│
-├── open-webui/                     # 📚 Reference (used to build EVA Chat)
-├── PubSec-Info-Assistant/          # 📚 Reference (Microsoft base)
-└── EVA-JP-reference-0113/          # 📚 Reference (previous version)
+??? EVA Suite/                      # Bag #1: Planning, orchestration, housekeeping
+?   ??? eva-orchestrator/
+?   ??? info-assistant-reference/
+?   ??? reports/
+?   ??? scripts/
+?
+??? EVA-JP-v1.2/                    # Bag #2: Mixed app + project hub
+?   ??? app/                        # EVA-JP application
+?   ??? infra/                      # EVA-JP infrastructure
+?   ??? docs/                       # ACTUALLY A PROJECT HUB
+?       ??? eva-ai-governance/      # Separate project
+?       ??? eva-foundation/         # Project container
+?       ?   ??? projects/           # 11 sub-projects (including MS-InfoJP)
+?       ??? habit-tracker/          # Unrelated project
+?       ??? jp/                     # JP-specific stuff
+?
+??? open-webui/                     # Reference (used to build EVA Chat)
+??? PubSec-Info-Assistant/          # Reference (Microsoft base)
+??? EVA-JP-reference-0113/          # Reference (previous version)
 ```
 
 ---
@@ -73,48 +97,48 @@ I:\
 
 ```
 I:\
-├── _active/                        # 🚀 CURRENT WORK (max 3-5 projects)
-│   ├── ms-infojp/                 # MS-InfoJP deployment (moved from deep nest)
-│   ├── jp-auto-extraction/        # JP automation (currently active)
-│   └── eva-ai-governance/         # Active governance work
-│
-├── _projects/                      # 📂 ALL PROJECTS (flat, organized)
-│   ├── 01-documentation-generator/
-│   ├── 02-poc-agent-skills/
-│   ├── 03-poc-enhanced-docs/
-│   ├── 04-os-vnext/
-│   ├── 05-extract-cases/
-│   ├── 06-jp-auto-extraction/ → (symlink to _active/jp-auto-extraction)
-│   ├── 07-foundation-layer/
-│   ├── 08-cds-rag/
-│   ├── 09-eva-repo-documentation/
-│   ├── 10-mkdocs-poc/
-│   ├── 11-ms-infojp/ → (symlink to _active/ms-infojp)
-│   ├── 12-work-spc-reorg/         # This project
-│   ├── eva-ai-governance/ → (symlink to _active/eva-ai-governance)
-│   └── habit-tracker/
-│
-├── _reference/                     # 📚 REFERENCE CODE (read-only)
-│   ├── open-webui/                # Reference: EVA Chat base
-│   ├── PubSec-Info-Assistant/     # Reference: Microsoft platform
-│   ├── EVA-JP-reference-0113/     # Reference: Previous version
-│   └── EVA-JP-v1.2/               # Reference: ESDC customizations
-│
-├── eva-suite/                      # 🎯 PLANNING HUB (unchanged)
-│   ├── eva-orchestrator/
-│   ├── reports/
-│   ├── scripts/
-│   └── docs/
-│
-├── .vscode/                        # VS Code workspace configs
-│   ├── active-work.code-workspace
-│   ├── ms-infojp.code-workspace
-│   ├── jp-automation.code-workspace
-│   └── all-references.code-workspace
-│
-└── Quick access symlinks (optional):
-    ├── ms-infojp → _active/ms-infojp
-    └── jp-auto → _active/jp-auto-extraction
+??? _active/                        # CURRENT WORK (max 3-5 projects)
+?   ??? ms-infojp/                  # MS-InfoJP deployment (moved from deep nest)
+?   ??? jp-auto-extraction/         # JP automation (currently active)
+?   ??? eva-ai-governance/          # Active governance work
+?
+??? _projects/                      # ALL PROJECTS (flat, organized)
+?   ??? 01-documentation-generator/
+?   ??? 02-poc-agent-skills/
+?   ??? 03-poc-enhanced-docs/
+?   ??? 04-os-vnext/
+?   ??? 05-extract-cases/
+?   ??? 06-jp-auto-extraction/     # symlink to _active/jp-auto-extraction
+?   ??? 07-foundation-layer/
+?   ??? 08-cds-rag/
+?   ??? 09-eva-repo-documentation/
+?   ??? 10-mkdocs-poc/
+?   ??? 11-ms-infojp/              # symlink to _active/ms-infojp
+?   ??? 12-work-spc-reorg/         # This project
+?   ??? eva-ai-governance/         # symlink to _active/eva-ai-governance
+?   ??? habit-tracker/
+?
+??? _reference/                     # REFERENCE CODE (read-only)
+?   ??? open-webui/                 # Reference: EVA Chat base
+?   ??? PubSec-Info-Assistant/      # Reference: Microsoft platform
+?   ??? EVA-JP-reference-0113/      # Reference: Previous version
+?   ??? EVA-JP-v1.2/                # Reference: ESDC customizations
+?
+??? eva-suite/                      # PLANNING HUB (unchanged)
+?   ??? eva-orchestrator/
+?   ??? reports/
+?   ??? scripts/
+?   ??? docs/
+?
+??? .vscode/                        # VS Code workspace configs
+?   ??? active-work.code-workspace
+?   ??? ms-infojp.code-workspace
+?   ??? jp-automation.code-workspace
+?   ??? all-references.code-workspace
+?
+??? Quick access symlinks (optional):
+  ??? ms-infojp -> _active/ms-infojp
+  ??? jp-auto -> _active/jp-auto-extraction
 ```
 
 ### Path Length Comparison
@@ -166,19 +190,19 @@ Write-Host "Moving active projects..." -ForegroundColor Cyan
 # MS-InfoJP (highest priority)
 if (Test-Path "I:\EVA-JP-v1.2\docs\eva-foundation\projects\11-MS-InfoJP\base-platform") {
     Move-Item "I:\EVA-JP-v1.2\docs\eva-foundation\projects\11-MS-InfoJP\base-platform" "I:\_active\ms-infojp"
-    Write-Host "  ✓ MS-InfoJP moved to I:\_active\ms-infojp" -ForegroundColor Green
+    Write-Host "  ? MS-InfoJP moved to I:\_active\ms-infojp" -ForegroundColor Green
 }
 
 # JP Auto Extraction
 if (Test-Path "I:\EVA-JP-v1.2\docs\eva-foundation\projects\06-JP-Auto-Extraction") {
     Move-Item "I:\EVA-JP-v1.2\docs\eva-foundation\projects\06-JP-Auto-Extraction" "I:\_active\jp-auto-extraction"
-    Write-Host "  ✓ JP Auto moved to I:\_active\jp-auto-extraction" -ForegroundColor Green
+    Write-Host "  ? JP Auto moved to I:\_active\jp-auto-extraction" -ForegroundColor Green
 }
 
 # EVA AI Governance
 if (Test-Path "I:\EVA-JP-v1.2\docs\eva-ai-governance") {
     Move-Item "I:\EVA-JP-v1.2\docs\eva-ai-governance" "I:\_active\eva-ai-governance"
-    Write-Host "  ✓ EVA Governance moved to I:\_active\eva-ai-governance" -ForegroundColor Green
+    Write-Host "  ? EVA Governance moved to I:\_active\eva-ai-governance" -ForegroundColor Green
 }
 ```
 
@@ -193,20 +217,20 @@ $foundationProjects = Get-ChildItem "I:\EVA-JP-v1.2\docs\eva-foundation\projects
 
 foreach ($project in $foundationProjects) {
     Move-Item $project.FullName "I:\_projects\$($project.Name)"
-    Write-Host "  ✓ $($project.Name)" -ForegroundColor Green
+    Write-Host "  ? $($project.Name)" -ForegroundColor Green
 }
 
 # Move other scattered projects
 if (Test-Path "I:\EVA-JP-v1.2\docs\habit-tracker") {
     Move-Item "I:\EVA-JP-v1.2\docs\habit-tracker" "I:\_projects\habit-tracker"
-    Write-Host "  ✓ habit-tracker" -ForegroundColor Green
+    Write-Host "  ? habit-tracker" -ForegroundColor Green
 }
 
 # Create symlinks for active projects in _projects/ for continuity
 New-Item -ItemType SymbolicLink -Path "I:\_projects\06-jp-auto-extraction" -Target "I:\_active\jp-auto-extraction"
 New-Item -ItemType SymbolicLink -Path "I:\_projects\11-ms-infojp" -Target "I:\_active\ms-infojp"
 New-Item -ItemType SymbolicLink -Path "I:\_projects\eva-ai-governance" -Target "I:\_active\eva-ai-governance"
-Write-Host "  ✓ Created organization symlinks" -ForegroundColor Green
+Write-Host "  ? Created organization symlinks" -ForegroundColor Green
 ```
 
 ### Phase 5: Move Reference Repos (5 minutes)
@@ -217,22 +241,22 @@ Write-Host "Organizing reference repositories..." -ForegroundColor Cyan
 
 if (Test-Path "I:\open-webui") {
     Move-Item "I:\open-webui" "I:\_reference\open-webui"
-    Write-Host "  ✓ open-webui" -ForegroundColor Green
+    Write-Host "  ? open-webui" -ForegroundColor Green
 }
 
 if (Test-Path "I:\PubSec-Info-Assistant") {
     Move-Item "I:\PubSec-Info-Assistant" "I:\_reference\PubSec-Info-Assistant"
-    Write-Host "  ✓ PubSec-Info-Assistant" -ForegroundColor Green
+    Write-Host "  ? PubSec-Info-Assistant" -ForegroundColor Green
 }
 
 if (Test-Path "I:\EVA-JP-reference-0113") {
     Move-Item "I:\EVA-JP-reference-0113" "I:\_reference\EVA-JP-reference-0113"
-    Write-Host "  ✓ EVA-JP-reference-0113" -ForegroundColor Green
+    Write-Host "  ? EVA-JP-reference-0113" -ForegroundColor Green
 }
 
 if (Test-Path "I:\EVA-JP-v1.2") {
     Move-Item "I:\EVA-JP-v1.2" "I:\_reference\EVA-JP-v1.2"
-    Write-Host "  ✓ EVA-JP-v1.2" -ForegroundColor Green
+    Write-Host "  ? EVA-JP-v1.2" -ForegroundColor Green
 }
 ```
 
@@ -245,8 +269,8 @@ Write-Host "Creating convenience shortcuts..." -ForegroundColor Cyan
 New-Item -ItemType SymbolicLink -Path "I:\ms-infojp" -Target "I:\_active\ms-infojp" -ErrorAction SilentlyContinue
 New-Item -ItemType SymbolicLink -Path "I:\jp-auto" -Target "I:\_active\jp-auto-extraction" -ErrorAction SilentlyContinue
 
-Write-Host "  ✓ Quick access: I:\ms-infojp" -ForegroundColor Green
-Write-Host "  ✓ Quick access: I:\jp-auto" -ForegroundColor Green
+Write-Host "  ? Quick access: I:\ms-infojp" -ForegroundColor Green
+Write-Host "  ? Quick access: I:\jp-auto" -ForegroundColor Green
 ```
 
 ### Phase 7: Create VS Code Workspaces (5 minutes)
@@ -274,19 +298,19 @@ See [Workspace Configurations](#workspace-configurations) section below.
   "folders": [
     {
       "path": "I:\\_active\\ms-infojp",
-      "name": "🚀 MS-InfoJP Deploy"
+      "name": "MS-InfoJP Deploy"
     },
     {
       "path": "I:\\_active\\jp-auto-extraction",
-      "name": "🚀 JP Automation"
+      "name": "JP Automation"
     },
     {
       "path": "I:\\_active\\eva-ai-governance",
-      "name": "🚀 EVA AI Governance"
+      "name": "EVA AI Governance"
     },
     {
       "path": "I:\\eva-suite",
-      "name": "🎯 EVA Suite (Planning)"
+      "name": "EVA Suite (Planning)"
     }
   ],
   "settings": {
@@ -330,15 +354,15 @@ See [Workspace Configurations](#workspace-configurations) section below.
     },
     {
       "path": "I:\\_reference\\EVA-JP-v1.2\\app\\backend",
-      "name": "📚 EVA-JP Backend (Reference)"
+      "name": "EVA-JP Backend (Reference)"
     },
     {
       "path": "I:\\_reference\\PubSec-Info-Assistant",
-      "name": "📚 Microsoft Base (Reference)"
+      "name": "Microsoft Base (Reference)"
     },
     {
       "path": "I:\\eva-suite\\docs",
-      "name": "📋 EVA Suite Docs"
+      "name": "EVA Suite Docs"
     }
   ],
   "settings": {
@@ -367,7 +391,7 @@ See [Workspace Configurations](#workspace-configurations) section below.
     },
     {
       "path": "I:\\_reference\\EVA-JP-v1.2\\docs\\jp",
-      "name": "📚 JP Reference Docs"
+      "name": "JP Reference Docs"
     }
   ],
   "settings": {
@@ -389,19 +413,19 @@ See [Workspace Configurations](#workspace-configurations) section below.
   "folders": [
     {
       "path": "I:\\_reference\\open-webui",
-      "name": "📚 Open WebUI (EVA Chat Base)"
+      "name": "Open WebUI (EVA Chat Base)"
     },
     {
       "path": "I:\\_reference\\PubSec-Info-Assistant",
-      "name": "📚 PubSec Info Assistant (MS Base)"
+      "name": "PubSec Info Assistant (MS Base)"
     },
     {
       "path": "I:\\_reference\\EVA-JP-v1.2",
-      "name": "📚 EVA-JP v1.2 (ESDC)"
+      "name": "EVA-JP v1.2 (ESDC)"
     },
     {
       "path": "I:\\_reference\\EVA-JP-reference-0113",
-      "name": "📚 EVA-JP v0113 (Previous)"
+      "name": "EVA-JP v0113 (Previous)"
     }
   ],
   "settings": {
@@ -419,8 +443,8 @@ See [Workspace Configurations](#workspace-configurations) section below.
 ## Benefits
 
 ### 1. **Shorter Paths**
-- MS-InfoJP: 71 chars → 21 chars (**-70%**)
-- JP Auto: 67 chars → 31 chars (**-54%**)
+- MS-InfoJP: 71 chars -> 21 chars (**-70%**)
+- JP Auto: 67 chars -> 31 chars (**-54%**)
 - Enables bash scripts without workarounds
 
 ### 2. **Clear Organization**
@@ -557,9 +581,9 @@ _backups/
 # Test all symlinks
 Get-ChildItem "I:\_projects\*" | Where-Object { $_.LinkType -eq "SymbolicLink" } | ForEach-Object {
     if (Test-Path $_.Target) {
-        Write-Host "✓ $($_.Name) → $($_.Target)" -ForegroundColor Green
+        Write-Host "[OK] $($_.Name) -> $($_.Target)" -ForegroundColor Green
     } else {
-        Write-Host "✗ $($_.Name) → BROKEN LINK" -ForegroundColor Red
+        Write-Host "[FAIL] $($_.Name) -> BROKEN LINK" -ForegroundColor Red
     }
 }
 ```
@@ -605,22 +629,22 @@ Get-ChildItem "I:\_projects\*" | Where-Object { $_.LinkType -eq "SymbolicLink" }
 
 ```
 12-work-spc-reorg/
-├── README.md                           # This file
-├── scripts/
-│   ├── 01-backup.ps1                  # Create backup before migration
-│   ├── 02-migrate.ps1                 # Full migration script
-│   ├── 03-create-workspaces.ps1       # Generate VS Code workspace files
-│   ├── 04-verify.ps1                  # Verify migration success
-│   └── 99-rollback.ps1                # Emergency rollback
-├── workspaces/
-│   ├── active-work.code-workspace
-│   ├── ms-infojp.code-workspace
-│   ├── jp-automation.code-workspace
-│   └── all-references.code-workspace
-└── evidence/
-    ├── before-structure.txt           # Pre-migration state
-    ├── after-structure.txt            # Post-migration state
-    └── migration-log.txt              # Execution log
+??? README.md                           # This file
+??? scripts/
+?   ??? 01-backup.ps1                  # Create backup before migration
+?   ??? 02-migrate.ps1                 # Full migration script
+?   ??? 03-create-workspaces.ps1       # Generate VS Code workspace files
+?   ??? 04-verify.ps1                  # Verify migration success
+?   ??? 99-rollback.ps1                # Emergency rollback
+??? workspaces/
+?   ??? active-work.code-workspace
+?   ??? ms-infojp.code-workspace
+?   ??? jp-automation.code-workspace
+?   ??? all-references.code-workspace
+??? evidence/
+  ??? before-structure.txt           # Pre-migration state
+  ??? after-structure.txt            # Post-migration state
+  ??? migration-log.txt              # Execution log
 ```
 
 ---
